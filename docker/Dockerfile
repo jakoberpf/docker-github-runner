@@ -16,16 +16,16 @@ ENV GITHUB_ACCESS_TOKEN=""
 ENV AGENT_TOOLSDIRECTORY=/opt/hostedtoolcache
 
 # Labels.
-LABEL maintainer="me@tcardonne.fr" \
+LABEL maintainer="contact@jakoberpf.de" \
     org.label-schema.schema-version="1.0" \
     org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.vcs-ref=$VCS_REF \
-    org.label-schema.name="tcardonne/github-runner" \
+    org.label-schema.name="jakoberpf/github-runner" \
     org.label-schema.description="Dockerized GitHub Actions runner." \
-    org.label-schema.url="https://github.com/tcardonne/docker-github-runner" \
-    org.label-schema.vcs-url="https://github.com/tcardonne/docker-github-runner" \
-    org.label-schema.vendor="Thomas Cardonne" \
-    org.label-schema.docker.cmd="docker run -it tcardonne/github-runner:latest"
+    org.label-schema.url="https://github.com/jakoberpf/docker-github-runner" \
+    org.label-schema.vcs-url="https://github.com/jakoberpf/docker-github-runner" \
+    org.label-schema.vendor="Jakob Erpf" \
+    org.label-schema.docker.cmd="docker run -it jakoberpf/github-runner:latest"
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     apt-get install -y \
