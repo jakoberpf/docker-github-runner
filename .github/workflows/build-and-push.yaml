@@ -38,8 +38,8 @@ jobs:
           # Note: tags has to be all lower-case
           tags: |
             jakoberpf/docker-github-runner:latest 
-          # build on feature branches, push only on main branch
-          push: ${{ github.ref == 'refs/heads/main' }}
+          # build on feature branches, push only on master branch
+          push: ${{ github.ref == 'refs/heads/master' }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
