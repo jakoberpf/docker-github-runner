@@ -37,7 +37,7 @@ jobs:
           context: ./docker
           # Note: tags has to be all lower-case
           tags: |
-            jakoberpf/docker-github-runner:latest 
+            jakoberpf/github-runner:latest 
           # build on feature branches, push only on master branch
           push: ${{ github.ref == 'refs/heads/master' }}
 
