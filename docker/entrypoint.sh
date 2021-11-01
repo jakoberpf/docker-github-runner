@@ -72,4 +72,11 @@ else
         --unattended
 fi
 
+# remove() {
+#     ./config.sh remove --unattended --token $RUNNER_TOKEN
+# }
+
+# trap 'remove; exit 130' INT
+# trap 'remove; exit 143' TERM
+
 exec "$@"
