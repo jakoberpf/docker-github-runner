@@ -1,5 +1,3 @@
 tasks:
-  - name: Set github global name
-    command: git config --global user.name "Jakob Erpf"
   - name: Set github global email
-    command: git config --global user.email "58260820+jakoberpf@users.noreply.github.com"
+    before: git config --global user.email "58260820+jakoberpf@users.noreply.github.com"
